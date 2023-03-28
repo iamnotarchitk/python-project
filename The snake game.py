@@ -78,14 +78,14 @@ def move():
         x = head.xcor()
         head.setx(x + 20)
 
-# Keyboard bindings
+# Keyboard bindings method
 wn.listen()
 wn.onkeypress(go_up, "w")
 wn.onkeypress(go_down, "s")
 wn.onkeypress(go_left, "a")
 wn.onkeypress(go_right, "d")
 
-# Main game loop
+# Main game loop code
 while True:
     wn.update()
 
@@ -153,7 +153,7 @@ while True:
 
     move()    
 
-    # Check for head collision with the body segments
+    # Check for head collision with the body segments 
     for segment in segments:
         if segment.distance(head) < 20:
             time.sleep(1)
