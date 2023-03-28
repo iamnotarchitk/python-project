@@ -34,7 +34,7 @@ food.goto(0,100)
 
 segments = []
 
-# Pen
+# Pen code
 pen = turtle.Turtle()
 pen.speed(0)
 pen.shape("square")
